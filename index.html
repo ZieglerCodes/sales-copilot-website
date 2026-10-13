@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0B1220" />
+    <meta
+      name="description"
+      content="Private, real-time AI sales coaching that helps salespeople spot objections, buying signals, missed questions, and the next best move while the call is still happening."
+    />
+    <meta property="og:title" content="Sales Copilot | Real-Time AI Sales Coaching" />
+    <meta
+      property="og:description"
+      content="Know what to say while the call is still happening."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Sales Copilot | Real-Time AI Sales Coaching</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- Netlify detects these static forms at deploy time. -->
+    <form name="early-access" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="early-access" />
+      <input name="bot-field" />
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="role" />
+    </form>
+
+    <form name="support" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="support" />
+      <input name="bot-field" />
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <select name="topic">
+        <option value="early-access">Early access</option>
+        <option value="product">Product question</option>
+        <option value="technical">Technical question</option>
+        <option value="partnerships">Partnerships</option>
+        <option value="other">Other</option>
+      </select>
+      <textarea name="message"></textarea>
+    </form>
+
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
